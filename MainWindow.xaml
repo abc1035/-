@@ -1,0 +1,24 @@
+﻿<Window x:Name="在线考试系统1" x:Class="在线考试系统.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:在线考试系统"
+        mc:Ignorable="d"
+        Title="在线考试系统" Height="800" Width="1300" Icon="窗口图标.jpg" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,2" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="457*"/>
+            <ColumnDefinition Width="335*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Left" Margin="0,0,-2,0" Width="1294" Height="80" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Image HorizontalAlignment="Left" Height="82" Margin="150,0,0,-1" VerticalAlignment="Top" Width="203" Source="1.jpg"/>
+            <Button Content="状态监测" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Margin="834,10,0,0" Height="71" Background="White" BorderBrush="White" FontSize="36" Click="Button_Click"/>
+            <Button Content="退出登录" HorizontalAlignment="Left" Margin="994,10,0,0" VerticalAlignment="Top" Width="155" Height="71" Background="White" FontSize="36" BorderBrush="White"/>
+        </Grid>
+        <Button Content="考生入口" HorizontalAlignment="Left" Margin="382,395,0,0" VerticalAlignment="Top" Width="494" Height="115" Grid.ColumnSpan="2" FontSize="36" Click="Button_Click_1"/>
+        <Button Content="教师入口" HorizontalAlignment="Left" Margin="382,577,0,0" VerticalAlignment="Top" Width="494" Height="115" FontSize="36" Grid.ColumnSpan="2"/>
+        <Label Grid.ColumnSpan="2" Content="欢迎使用在线考试系统V1.0" HorizontalAlignment="Left" Height="116" Margin="94,191,0,0" VerticalAlignment="Top" Width="1134" FontSize="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
